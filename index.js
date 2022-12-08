@@ -41,7 +41,7 @@ let list = document.getElementById("skillsinfo");
 
 console.log(list);
 
-skills.map((item) => {
+skills.forEach((item) => {
   let div = document.createElement("div");
   div.innerHTML = item;
   //   console.log(div);
