@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg_main: silver;
+    --bg_nb: black;
+    --text_nb: white;
+    --bg_btn:grey;
+    --text_btn:black;
+    
+}
+#root{
+    background-color:aliceblue;
+    padding: 0.3rem 1rem;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-color: black;
+    width: 100%;
+    /* display: none; */
+
+}
+
+
+.navbar > a{
+    color: aliceblue;
+    text-decoration: none;
+}
+#personal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1rem;
+    background-color: darkslategray;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    color: white
+   
+}
+#personal > p {
+    padding:  1rem;
+    font-weight: 1000;  
+    font-size: large; 
+}
+
+.img{
+    width: 50%;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+ 
+}
+#about{
+    background-color: lightslategray;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    margin: 1rem 0;
+    font-size: large;
+    color: aliceblue;
+
+}
+
+#about>ul {
+    list-style-type: none;
+    padding: 0.7rem 1rem;
+    font-weight: 900;
+}
+#skillsinfo{
+    background-color: cadetblue;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: aliceblue;
+}
+#skillsinfo > h1{
+    padding-bottom: 0.7rem;
+}
+#skillsinfo > div{
+    padding: 0 1rem;
+    font-weight: 900;
+}
+
+.cv_btn {
+    margin: 0.7rem 0;
+    
+   
+}
+.cv_btn > button{
+    border-radius: 0.6rem;
+    padding: 0.5rem 0.5rem;
+    background-color: darkslategray;
+    font-weight: 800;
+}
+#btn > a{
+    color: wheat;
+    text-decoration: none;
+    font-style: italic;
+    
+}
+
+
+@media only screen and (max-width: 730px) {
+    .navbar {
+
+            gap: 2rem;
+    
+    
+        }
+
+
+}
+@media only screen and (max-width: 350px) {
+    .navbar {
+            flex-direction: column;
+            
+        }
+                #personal {
+                    flex-direction: column-reverse;
+        
+                }
+} 
+
+
+
+
+
+
