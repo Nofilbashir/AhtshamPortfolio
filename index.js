@@ -25,11 +25,11 @@ let about = document.getElementById("info");
 for (key in data) {
   //   console.log(key);
   let li = document.createElement("li");
-  li.innerText =
-    `${key} :` +
-    "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" +
-    `${data[key]}`;
-  // li.innerHTML = data[key];
+  // li.innerText =
+  //   `${key} :` +
+  //   "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0" +
+  //   `${data[key]}`;
+  li.innerHTML = data[key];
   console.log(li);
   about.appendChild(li);
 }
